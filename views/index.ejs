@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <!-- <script type="text/javascript" src="../public/js/scr.js" def></script> -->
+    
+    
+</head>
+<body>
+    <div class="form-box">
+    <div class="button-box">
+    <div id="btn"></div>
+     <button type="button" class="toggle-btn" onclick="login()">Login</button>   
+     <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>   
+    </div>
+    <form action="/login" class="input-group" id="Log-in" method="POST">
+        <input type="text" class="input-field" placeholder="username" name="username">
+        <input type="password" class="input-field" placeholder="Password"  name="pass">
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn" >Log In</button>
+    </form>
+    <form action="/signup" class="input-group" id="sign-up" method="POST">
+        <input type="text" class="input-field" placeholder="UserName" name="username" id="name">
+        <input type="text" class="input-field" placeholder="Email" id="email" name="email">
+        <input type="password" class="input-field" placeholder="Password" id="pass" name="pass">
+        <input type="password" class="input-field" placeholder="Confirm Password" id="cpass" name="cpass">
+        <input type="checkbox" class="check-box"><span>I agree to the term </span>
+        <button type="submit" class="submit-btn" >Sign up</button>
+    </form>
+    </div>
+    <script>
+        var x=document.getElementById("Log-in");
+        var y=document.getElementById("sign-up");
+        var z=document.getElementById("btn");
+
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="65px";
+            z.style.left="110px";
+
+        }
+//         function login(){
+//             x.style.left="65px";
+//             y.style.left="450px";
+//             z.style.left="0px";
+
+//         }
+
+
+//         function abc() {  
+//     //collect form data in JavaScript variables  
+//     var pw1 = document.getElementById("pass").value;  
+//     var pw2 = document.getElementById("cpass").value;  
+//     var name1 = document.getElementById("name").value;   
+//     var name2 = document.getElementById("email").value;  
+      
+    
+    
+//      //check empty password field  
+//     if(pw1 == "") {  
+//       document.getElementById("pass").innerHTML = "**Fill the password please!";  
+//       return false;  
+//     }  
+    
+//     //check empty confirm password field  
+//     if(pw2 == "") {  
+//       document.getElementById("cpass").innerHTML = "**Enter the cpassword please!";  
+//       return false;  
+//     }   
+     
+//     if(pw1 != pw2) {  
+//       document.getElementById("cpass").innerHTML = "**Passwords are not same";  
+//       return false;  
+//     } else {  
+//       alert ("Your password created successfully");  
+//     }  
+//  }  
+    </script>
+    
+
+</body>
+</html>
